@@ -1,0 +1,2 @@
+- application requires PHP version >= 7.1;
+- For start demo please use word "alf";
