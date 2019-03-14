@@ -55,7 +55,12 @@ class Api
     public function search(): string
     {
         $gameFinder = new GameFinder();
-        $foundGames = $gameFinder->findGame($this->input);
+        try {
+            $foundGames = $gameFinder->findGame($this->input);
+        } catch (ValidateException $e) {
+            return $this->response($e->getMessage());
+        }
+
         return $this->response($foundGames, 200);
     }
 }

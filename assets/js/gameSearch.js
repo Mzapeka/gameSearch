@@ -15,6 +15,9 @@ $(document).ready(function () {
             data: {input: searchString},
             success: function (data) {
                 renderGames(data);
+            },
+            error: function (data) {
+                alert({type: 'warning', text: data.responseText});
             }
         });
     });
