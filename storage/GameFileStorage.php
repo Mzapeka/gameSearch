@@ -7,6 +7,8 @@
  */
 namespace storage;
 
+require_once 'GameStorageInterface.php';
+
 use http\Exception\RuntimeException;
 
 class GameFileStorage implements GameStorageInterface

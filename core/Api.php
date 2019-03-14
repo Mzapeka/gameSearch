@@ -7,6 +7,8 @@
  */
 namespace core;
 
+require_once __DIR__ .'/GameFinder.php';
+
 class Api
 {
     protected $input = '';

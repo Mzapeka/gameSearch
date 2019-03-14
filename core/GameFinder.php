@@ -3,6 +3,7 @@
 namespace core;
 
 require_once __DIR__ .'/ValidateException.php';
+require_once __DIR__ .'/../storage/GameFileStorage.php';
 
 use storage\GameFileStorage;
 

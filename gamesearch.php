@@ -7,10 +7,7 @@
  */
 use core\Api;
 
-require_once __DIR__ .'/core/GameFinder.php';
 require_once __DIR__ .'/core/Api.php';
-require_once __DIR__ . '/storage/GameStorageInterface.php';
-require_once __DIR__ . '/storage/GameFileStorage.php';
 
 try {
     $api = new Api();
